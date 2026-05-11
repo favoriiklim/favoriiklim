@@ -104,59 +104,86 @@ def count_commits_last_year(repo):
 
 
 def make_svg(stats, top_repos):
+    width = 495
+    height = 195
+
+    # Sağdaki halka içinde artık saçma rank değil,
+    # gerçek aktif repo sayını gösteriyoruz.
+    badge_text = str(stats["active_repos"])
+
     rows = [
-        ("Total personal repos", stats["total_repos"]),
-        ("Active repos last year", stats["active_repos"]),
-        ("Commits last year", stats["commits_last_year"]),
-        ("Private repos included", stats["private_repos"]),
-        ("Public stars", stats["stars"]),
+        ("☆", "Total Stars:", stats["stars"]),
+        ("↻", "Total Commits:", stats["commits_last_year"]),
+        ("⑂", "Total Personal Repos:", stats["total_repos"]),
+        ("!", "Active Repos:", stats["active_repos"]),
+        ("▣", "Private Repos:", stats["private_repos"]),
     ]
 
     row_svg = []
-    y = 86
+    y = 72
 
-    for label, value in rows:
+    for icon, label, value in rows:
         row_svg.append(
             f'''
-            <text x="32" y="{y}" class="label">{html.escape(label)}</text>
-            <text x="500" y="{y}" text-anchor="end" class="value">{value}</text>
+            <text x="25" y="{y}" class="icon">{html.escape(icon)}</text>
+            <text x="55" y="{y}" class="label">{html.escape(label)}</text>
+            <text x="300" y="{y}" class="value">{value}</text>
             '''
         )
-        y += 34
+        y += 28
 
-    top_svg = []
-    y = 254
-
-    for repo in top_repos[:3]:
-        top_svg.append(
-            f'''
-            <text x="32" y="{y}" class="small">{html.escape(repo["name"])}</text>
-            <text x="500" y="{y}" text-anchor="end" class="smallvalue">{repo["commits"]} commits</text>
-            '''
-        )
-        y += 22
-
-    return f'''<svg width="560" height="320" viewBox="0 0 560 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="560" height="320" rx="16" fill="#0c1014"/>
-  <rect x="1" y="1" width="558" height="318" rx="15" stroke="#2aa889" stroke-opacity="0.35"/>
+    return f'''<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="{width}" height="{height}" rx="4" fill="#0c1014"/>
 
   <style>
-    .title {{ fill: #2aa889; font: 700 22px Arial, sans-serif; }}
-    .subtitle {{ fill: #8fbcbb; font: 400 13px Arial, sans-serif; }}
-    .label {{ fill: #99d1ce; font: 400 16px Arial, sans-serif; }}
-    .value {{ fill: #2aa889; font: 700 17px Arial, sans-serif; }}
-    .section {{ fill: #8fbcbb; font: 700 14px Arial, sans-serif; }}
-    .small {{ fill: #99d1ce; font: 400 13px Arial, sans-serif; }}
-    .smallvalue {{ fill: #2aa889; font: 700 13px Arial, sans-serif; }}
+    .title {{
+      fill: #2aa889;
+      font: 600 22px Arial, sans-serif;
+    }}
+
+    .icon {{
+      fill: #5fb3c8;
+      font: 400 21px Arial, sans-serif;
+    }}
+
+    .label {{
+      fill: #99d1ce;
+      font: 700 16px Arial, sans-serif;
+    }}
+
+    .value {{
+      fill: #99d1ce;
+      font: 700 16px Arial, sans-serif;
+    }}
+
+    .badge {{
+      fill: #99d1ce;
+      font: 700 31px Arial, sans-serif;
+    }}
+
+    .badge-sub {{
+      fill: #2aa889;
+      font: 700 10px Arial, sans-serif;
+      letter-spacing: 0.8px;
+    }}
   </style>
 
-  <text x="32" y="42" class="title">{html.escape(USERNAME)}'s GitHub Stats</text>
-  <text x="32" y="62" class="subtitle">Private repos included • last 365 days • default branches</text>
+  <text x="25" y="35" class="title">{html.escape(USERNAME)}'s GitHub Stats</text>
 
   {''.join(row_svg)}
 
-  <text x="32" y="228" class="section">Top active repos</text>
-  {''.join(top_svg)}
+  <circle cx="400" cy="106" r="49" stroke="#153f37" stroke-width="7"/>
+  <path
+    d="M 400 57
+       A 49 49 0 0 1 447 92"
+    stroke="#2aa889"
+    stroke-width="7"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <text x="400" y="110" text-anchor="middle" dominant-baseline="middle" class="badge">{badge_text}</text>
+  <text x="400" y="137" text-anchor="middle" class="badge-sub">ACTIVE</text>
 </svg>
 '''
 
