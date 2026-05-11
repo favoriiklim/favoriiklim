@@ -52,10 +52,10 @@ Bilgisayar bilimlerinin farklı disiplinlerinde (simülasyon, AI, oyun ve web) �
 ---
 
 ### 📊 GitHub İstatistikleri
-![Geliştirici İstatistikleri](https://github-readme-stats.vercel.app/api?username=GITHUB_KULLANICI_ADIN&show_icons=true&theme=gotham&count_private=true)
-![En Çok Kullanılan Diller](https://github-readme-stats.vercel.app/api/top-langs/?username=GITHUB_KULLANICI_ADIN&layout=compact&theme=gotham)
+![Geliştirici İstatistikleri](https://github-readme-stats.vercel.app/api?username=favoriiklim&show_icons=true&theme=gotham&count_private=true)
+![En Çok Kullanılan Diller](https://github-readme-stats.vercel.app/api/top-langs/?username=favoriiklim&layout=compact&theme=gotham)
 
 ---
 
 ### 📬 Bana Ulaşın
-[LinkedIn](LINKIN_BURAYA) | [E-posta](MAILIN_BURAYA)
+[LinkedIn](www.linkedin.com/in/ilker-coskunsel-6767ic) | [E-posta](icoskunsel@gmail.com)
