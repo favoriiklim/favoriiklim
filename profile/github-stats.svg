@@ -1,0 +1,46 @@
+<svg width="560" height="320" viewBox="0 0 560 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="560" height="320" rx="16" fill="#0c1014"/>
+  <rect x="1" y="1" width="558" height="318" rx="15" stroke="#2aa889" stroke-opacity="0.35"/>
+
+  <style>
+    .title { fill: #2aa889; font: 700 22px Arial, sans-serif; }
+    .subtitle { fill: #8fbcbb; font: 400 13px Arial, sans-serif; }
+    .label { fill: #99d1ce; font: 400 16px Arial, sans-serif; }
+    .value { fill: #2aa889; font: 700 17px Arial, sans-serif; }
+    .section { fill: #8fbcbb; font: 700 14px Arial, sans-serif; }
+    .small { fill: #99d1ce; font: 400 13px Arial, sans-serif; }
+    .smallvalue { fill: #2aa889; font: 700 13px Arial, sans-serif; }
+  </style>
+
+  <text x="32" y="42" class="title">favoriiklim's GitHub Stats</text>
+  <text x="32" y="62" class="subtitle">Private repos included • last 365 days • default branches</text>
+
+  
+            <text x="32" y="86" class="label">Total personal repos</text>
+            <text x="500" y="86" text-anchor="end" class="value">18</text>
+            
+            <text x="32" y="120" class="label">Active repos last year</text>
+            <text x="500" y="120" text-anchor="end" class="value">16</text>
+            
+            <text x="32" y="154" class="label">Commits last year</text>
+            <text x="500" y="154" text-anchor="end" class="value">219</text>
+            
+            <text x="32" y="188" class="label">Private repos included</text>
+            <text x="500" y="188" text-anchor="end" class="value">11</text>
+            
+            <text x="32" y="222" class="label">Public stars</text>
+            <text x="500" y="222" text-anchor="end" class="value">10</text>
+            
+
+  <text x="32" y="228" class="section">Top active repos</text>
+  
+            <text x="32" y="254" class="small">GatesJam26</text>
+            <text x="500" y="254" text-anchor="end" class="smallvalue">40 commits</text>
+            
+            <text x="32" y="276" class="small">MyUnityLibraryFor3D</text>
+            <text x="500" y="276" text-anchor="end" class="smallvalue">38 commits</text>
+            
+            <text x="32" y="298" class="small">favoriiklim.github.io</text>
+            <text x="500" y="298" text-anchor="end" class="smallvalue">25 commits</text>
+            
+</svg>
