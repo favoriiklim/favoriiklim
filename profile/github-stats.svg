@@ -1,46 +1,73 @@
-<svg width="560" height="320" viewBox="0 0 560 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="560" height="320" rx="16" fill="#0c1014"/>
-  <rect x="1" y="1" width="558" height="318" rx="15" stroke="#2aa889" stroke-opacity="0.35"/>
+<svg width="495" height="195" viewBox="0 0 495 195" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="495" height="195" rx="4" fill="#0c1014"/>
 
   <style>
-    .title { fill: #2aa889; font: 700 22px Arial, sans-serif; }
-    .subtitle { fill: #8fbcbb; font: 400 13px Arial, sans-serif; }
-    .label { fill: #99d1ce; font: 400 16px Arial, sans-serif; }
-    .value { fill: #2aa889; font: 700 17px Arial, sans-serif; }
-    .section { fill: #8fbcbb; font: 700 14px Arial, sans-serif; }
-    .small { fill: #99d1ce; font: 400 13px Arial, sans-serif; }
-    .smallvalue { fill: #2aa889; font: 700 13px Arial, sans-serif; }
+    .title {
+      fill: #2aa889;
+      font: 600 22px Arial, sans-serif;
+    }
+
+    .icon {
+      fill: #5fb3c8;
+      font: 400 21px Arial, sans-serif;
+    }
+
+    .label {
+      fill: #99d1ce;
+      font: 700 16px Arial, sans-serif;
+    }
+
+    .value {
+      fill: #99d1ce;
+      font: 700 16px Arial, sans-serif;
+    }
+
+    .badge {
+      fill: #99d1ce;
+      font: 700 31px Arial, sans-serif;
+    }
+
+    .badge-sub {
+      fill: #2aa889;
+      font: 700 10px Arial, sans-serif;
+      letter-spacing: 0.8px;
+    }
   </style>
 
-  <text x="32" y="42" class="title">favoriiklim's GitHub Stats</text>
-  <text x="32" y="62" class="subtitle">Private repos included • last 365 days • default branches</text>
+  <text x="25" y="35" class="title">favoriiklim's GitHub Stats</text>
 
   
-            <text x="32" y="86" class="label">Total personal repos</text>
-            <text x="500" y="86" text-anchor="end" class="value">18</text>
+            <text x="25" y="72" class="icon">☆</text>
+            <text x="55" y="72" class="label">Total Stars:</text>
+            <text x="300" y="72" class="value">10</text>
             
-            <text x="32" y="120" class="label">Active repos last year</text>
-            <text x="500" y="120" text-anchor="end" class="value">16</text>
+            <text x="25" y="100" class="icon">↻</text>
+            <text x="55" y="100" class="label">Total Commits:</text>
+            <text x="300" y="100" class="value">220</text>
             
-            <text x="32" y="154" class="label">Commits last year</text>
-            <text x="500" y="154" text-anchor="end" class="value">219</text>
+            <text x="25" y="128" class="icon">⑂</text>
+            <text x="55" y="128" class="label">Total Personal Repos:</text>
+            <text x="300" y="128" class="value">18</text>
             
-            <text x="32" y="188" class="label">Private repos included</text>
-            <text x="500" y="188" text-anchor="end" class="value">11</text>
+            <text x="25" y="156" class="icon">!</text>
+            <text x="55" y="156" class="label">Active Repos:</text>
+            <text x="300" y="156" class="value">16</text>
             
-            <text x="32" y="222" class="label">Public stars</text>
-            <text x="500" y="222" text-anchor="end" class="value">10</text>
+            <text x="25" y="184" class="icon">▣</text>
+            <text x="55" y="184" class="label">Private Repos:</text>
+            <text x="300" y="184" class="value">11</text>
             
 
-  <text x="32" y="228" class="section">Top active repos</text>
-  
-            <text x="32" y="254" class="small">GatesJam26</text>
-            <text x="500" y="254" text-anchor="end" class="smallvalue">40 commits</text>
-            
-            <text x="32" y="276" class="small">MyUnityLibraryFor3D</text>
-            <text x="500" y="276" text-anchor="end" class="smallvalue">38 commits</text>
-            
-            <text x="32" y="298" class="small">favoriiklim.github.io</text>
-            <text x="500" y="298" text-anchor="end" class="smallvalue">25 commits</text>
-            
+  <circle cx="400" cy="106" r="49" stroke="#153f37" stroke-width="7"/>
+  <path
+    d="M 400 57
+       A 49 49 0 0 1 447 92"
+    stroke="#2aa889"
+    stroke-width="7"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <text x="400" y="110" text-anchor="middle" dominant-baseline="middle" class="badge">16</text>
+  <text x="400" y="137" text-anchor="middle" class="badge-sub">ACTIVE</text>
 </svg>
