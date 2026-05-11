@@ -58,4 +58,4 @@ Bilgisayar bilimlerinin farklı disiplinlerinde (simülasyon, AI, oyun ve web) �
 ---
 
 ### 📬 Bana Ulaşın
-[LinkedIn](www.linkedin.com/in/ilker-coskunsel-6767ic) | [E-posta](icoskunsel@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/ilker-coskunsel-6767ic) | [E-posta](mailto:icoskunsel@gmail.com)
