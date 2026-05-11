@@ -1,0 +1,34 @@
+name: Update custom GitHub stats
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate stats SVG
+        env:
+          GH_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
+          GITHUB_USERNAME: favoriiklim
+        run: python scripts/generate_github_stats.py
+
+      - name: Commit updated SVG
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/github-stats.svg
+          git diff --staged --quiet || git commit -m "Update GitHub stats card"
+          git push
