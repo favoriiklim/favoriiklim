@@ -53,11 +53,12 @@ Bilgisayar bilimlerinin farklı disiplinlerinde (simülasyon, AI, oyun ve web) �
 
 ### 📊 GitHub İstatistikleri
 
-![Geliştirici İstatistikleri](https://github-readme-stats-eight-theta.vercel.app/api?username=favoriiklim&show_icons=true&theme=gotham&count_private=true&hide_border=true)
+![Geliştirici İstatistikleri](https://github-readme-stats-eight-theta.vercel.app/api?username=favoriiklim&show_icons=true&theme=gotham&count_private=true&hide_border=true&include_all_commits=true)
 
 ![En Çok Kullanılan Diller](https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=favoriiklim&layout=compact&theme=gotham&hide_border=true)
 
 ![İlker's Streak](https://github-readme-streak-stats.herokuapp.com/?user=favoriiklim&theme=gotham&hide_border=true)
+
 ---
 
 ### 📬 Bana Ulaşın
