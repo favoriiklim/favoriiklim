@@ -52,9 +52,8 @@ Bilgisayar bilimlerinin farklı disiplinlerinde (simülasyon, AI, oyun ve web) �
 ---
 
 ### 📊 GitHub İstatistikleri
-![Geliştirici İstatistikleri](https://github-readme-stats.vercel.app/api?username=favoriiklim&show_icons=true&theme=gotham&count_private=true)
-![En Çok Kullanılan Diller](https://github-readme-stats.vercel.app/api/top-langs/?username=favoriiklim&layout=compact&theme=gotham)
-
+![Geliştirici İstatistikleri](https://github-readme-stats.vercel.app/api?username=favoriiklim&show_icons=true&theme=gotham&count_private=true&hide_border=true)
+![En Çok Kullanılan Diller](https://github-readme-stats.vercel.app/api/top-langs/?username=favoriiklim&layout=compact&theme=gotham&hide_border=true)
 ---
 
 ### 📬 Bana Ulaşın
