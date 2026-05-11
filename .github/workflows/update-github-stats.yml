@@ -18,19 +18,27 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        timeout-minutes: 1
+        with:
+          fetch-depth: 1
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        timeout-minutes: 1
         with:
           python-version: "3.12"
 
       - name: Generate stats SVG
+        timeout-minutes: 2
         env:
           GH_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
           GITHUB_USERNAME: favoriiklim
         run: python scripts/generate_github_stats.py
 
       - name: Commit updated SVG
+        timeout-minutes: 1
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
