@@ -43,7 +43,7 @@
             
             <text x="25" y="100" class="icon">↻</text>
             <text x="55" y="100" class="label">Total Commits:</text>
-            <text x="300" y="100" class="value">221</text>
+            <text x="300" y="100" class="value">222</text>
             
             <text x="25" y="128" class="icon">⑂</text>
             <text x="55" y="128" class="label">Total Personal Repos:</text>
@@ -51,7 +51,7 @@
             
             <text x="25" y="156" class="icon">!</text>
             <text x="55" y="156" class="label">Active Repos:</text>
-            <text x="300" y="156" class="value">16</text>
+            <text x="300" y="156" class="value">17</text>
             
             <text x="25" y="184" class="icon">▣</text>
             <text x="55" y="184" class="label">Private Repos:</text>
@@ -68,6 +68,6 @@
     fill="none"
   />
 
-  <text x="400" y="110" text-anchor="middle" dominant-baseline="middle" class="badge">16</text>
+  <text x="400" y="110" text-anchor="middle" dominant-baseline="middle" class="badge">17</text>
   <text x="400" y="137" text-anchor="middle" class="badge-sub">ACTIVE</text>
 </svg>
