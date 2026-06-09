@@ -36,20 +36,10 @@ Bilgisayar bilimlerinin farklı disiplinlerinde (simülasyon, AI, oyun ve web) �
 | **Web & Uygulama** | Blazor, .NET |
 | **Oyun & Simülasyon** | **Unity**, C# Simulation Engines |
 | **Veri & AI** | Prompt Engineering, Data Manipulation |
-| **İşletim Sistemi** | **Linux (Ubuntu)**, **Sway (Wayland)**, **Waybar**, **Ricing** |
-
----
-
-### 🖥️ Workspace & Environment (Ricing)
-İşletim sistemimi sadece bir araç değil, optimize edilmiş bir yaşam alanı olarak görüyorum. 
-* **OS:** Ubuntu
-* **Window Manager:** Sway (Wayland)
-* **Status Bar:** Waybar (Custom Config)
-* **Estetik:** Karanlık, detaylı ve endüstriyel-gotik vibe.
+| **İşletim Sistemi** | **Linux (Ubuntu)**, **Windows 11** |
 
 > **Not:** Bilgisayar bilimlerinin temellerine hakim, yeni teknolojileri hızla öğrenip kısıtlı sürede "deploy" edebilecek adaptasyon yeteneğine sahibim.
 
----
 
 ### 📊 GitHub İstatistikleri
 
