@@ -55,7 +55,7 @@
             
             <text x="25" y="184" class="icon">▣</text>
             <text x="55" y="184" class="label">Private Repos:</text>
-            <text x="300" y="184" class="value">13</text>
+            <text x="300" y="184" class="value">12</text>
             
 
   <circle cx="400" cy="106" r="49" stroke="#153f37" stroke-width="7"/>
